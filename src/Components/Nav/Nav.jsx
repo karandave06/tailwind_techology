@@ -37,9 +37,9 @@ settoggle(!(toggle))
 
         <div className="hidden space-x-12 main-container lg:flex">
             <a  href="#">Pricing</a>
-            <a  href="#">Product</a>
-            <a  href="#">About</a>
-            <a  href="#">Careers</a>
+            <a  href="#product">Product</a>
+            <a  href="#about">About</a>
+            <a  href="#ctc">Careers</a>
             <a  href="#footer">Community</a>
             
         </div>
