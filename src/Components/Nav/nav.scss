@@ -1,4 +1,4 @@
-@import '../../index.scss';
+@import "../../index.scss";
 @font-face {
   src: url("https://www.axis-praxis.org/fonts/webfonts/MetaVariableDemo-Set.woff2")
     format("woff2");
@@ -8,7 +8,7 @@
 }
 
 .logo {
-    margin-right: .8rem;
+  margin-right: 0.8rem;
   h1 {
     font-size: 2.2rem;
     font-weight: normal;
@@ -17,65 +17,57 @@
 }
 
 .main-container {
-  a{
+  a {
     position: relative;
     z-index: 1;
-    padding: .5rem;
+    padding: 0.5rem;
 
-    &:hover{
-        color:#f8f4ec;
-        transition: .2s ease;
+    &:hover {
+      color: #f8f4ec;
+      transition: 0.2s ease;
     }
 
-    &:after{
-        display: block;
-        position: absolute;
-        top: 0;
-        bottom: 0;
-        right: 0;
-        margin: auto;
-        width: 100%;
-        height: 1px;
-        content: '.';
-        color: transparent;
-        background: #ef5535;
-        visibility: none;
-        opacity: 0;
-        z-index: -1;
+    &:after {
+      display: block;
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      right: 0;
+      margin: auto;
+      width: 100%;
+      height: 1px;
+      content: ".";
+      color: transparent;
+      background: #ef5535;
+      visibility: none;
+      opacity: 0;
+      z-index: -1;
     }
 
-    &:hover:after{
-        opacity: 1;
-        visibility: visible;
-        height: 100%;
+    &:hover:after {
+      opacity: 1;
+      visibility: visible;
+      height: 100%;
     }
-   
-}
-}
-
-.button{
-        
-        
-        width: 6rem;
-        margin:1rem;
-        height: 2rem;
-        position: relative;
-    a{
-        font-size: 13px;
-        position: absolute;
-        top: 7px;
-        right: 15px;
-    
-        
-        
-        
-        
-    }
-
-   
+  }
 }
 
-#menut-btn{
+.button {
+ 
+  width: 6rem;
+  margin: 1rem;
+  height: 2rem;
+  position: relative;
+  a {
+    font-size: 13px;
+    position: absolute;
+    top: 7px;
+    right: 15px;
+  }
+}
+
+#menut-btn {
+  
   cursor: pointer;
   transition: all 0.25s;
   position: relative;
@@ -85,8 +77,7 @@
 
 .hamburger-top,
 .hamburger-middle,
-.hamburger-bottom{
-
+.hamburger-bottom {
   position: absolute;
   width: 24px;
   top: 0;
@@ -94,34 +85,29 @@
   height: 2px;
   background: #000;
   transform: rotate(0);
-  transition:all 0.5s;
-
+  transition: all 0.2s;
 }
 
-.hamburger-middle{
-  transform: translateY(
-    7px
-  );
+.hamburger-middle {
+  transform: translateY(7px);
 }
 
-.hamburger-bottom{
-  transform: translateY(
-    14px
-  );
+.hamburger-bottom {
+  transform: translateY(14px);
 }
 
-.open{
+.open {
   transform: rotate(90deg);
   transform: translateY(0px);
 }
 
-.open .hamburger-top{
+.open .hamburger-top {
   transform: rotate(45deg) translate(6px) translateY(6px);
 }
-.open .hamburger-middle{
-// display: none;
-left: -10000%;
+.open .hamburger-middle {
+  // display: none;
+  left: -10000%;
 }
-.open .hamburger-bottom{
+.open .hamburger-bottom {
   transform: rotate(-45deg) translate(-6px) translateY(6px);
 }

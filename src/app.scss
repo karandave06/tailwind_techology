@@ -1,0 +1,26 @@
+.btn {
+  i {
+    font-size: 2rem;
+    position: fixed;
+    bottom: 40px;
+    right: 4px;
+    background: #ef5535;
+    padding: .8rem;
+    border-radius: 50%;
+    color: white;
+    cursor: pointer;
+    opacity: 0;
+
+
+    &:hover{
+    background: #dd8f80;
+    color: black;
+    transition:ease .3s;
+    pointer-events: none;
+    
+
+    }
+  }
+
+
+}
