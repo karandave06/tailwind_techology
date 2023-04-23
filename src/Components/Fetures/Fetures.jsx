@@ -3,7 +3,7 @@ import Item from "./Item";
 
 const Fetures = () => {
   return (
-    <div className="fetures">
+    <div className="fetures" id="product">
       {/* flex container */}
 
       <div className="container flex flex-col px-4 mx-auto mt-10 space-y-12 md:space-y-0 md:flex-row">

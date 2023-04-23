@@ -5,7 +5,7 @@ const Hero = () => {
   return (
     <div>
 
-     <div className="mt-[7rem] container flex flex-col-reverse items-center px-6 mx-auto  space-y-0 md:space-y-0 md:flex-row ">
+     <div id='hero' className="mt-[7rem] container flex flex-col-reverse items-center px-6 mx-auto  space-y-0 md:space-y-0 md:flex-row ">
     {/* left item's */}
 
     <div className='flex flex-col mb-32 space-y-12 md:w-1/2'>

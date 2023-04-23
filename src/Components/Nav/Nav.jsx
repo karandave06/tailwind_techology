@@ -40,7 +40,7 @@ settoggle(!(toggle))
             <a  href="#">Product</a>
             <a  href="#">About</a>
             <a  href="#">Careers</a>
-            <a  href="#">Community</a>
+            <a  href="#footer">Community</a>
             
         </div>
 
@@ -71,12 +71,11 @@ settoggle(!(toggle))
     <div id='menu' className={`fixed flex flex-col items-center self-end py-8 mt-10
     space-y-6 font-bold bg-white text-black sm-w-auto sm:self-center left-6 right-6 drop-shadow-md ${toggle ? ' ' : 'hidden'}`}>
 
-    <a href="#">Pricing</a>
-    <a href="#">Product</a>
-    <a href="#">About Us</a>
-    <a href="#">Pricing</a>
-    <a href="#">Careers</a>
-    <a href="#">Community</a>
+    <a href="#hero" onClick={handelckick}>Pricing</a>
+    <a href="#product" onClick={handelckick}>Product</a>
+    <a href="#about" onClick={handelckick}>About Us</a>
+    <a href="#ctc" onClick={handelckick}>Careers</a>
+    <a href="#footer" onClick={handelckick}>Community</a>
 
     </div>
 

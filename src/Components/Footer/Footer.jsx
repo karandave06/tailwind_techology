@@ -7,7 +7,7 @@ import twitter from '../../../public/icon-twitter.svg'
 
 const Footer = () => {
   return (
-    <div className="footer bg-black">
+    <div className="footer bg-black" id='footer'>
 
     <div className="container flex flex-col-reverse justify-between px-8 md:px-2 py-10 mx-auto space-y-8 md:flex-row md:space-y-0">
 

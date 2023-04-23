@@ -5,7 +5,7 @@ import avtar4 from '../../../public/avatar-shanai.png'
 
 const Testimonial = () => {
   return (
-    <div className="testimonial ">
+    <div className="testimonial " id="about">
 
     <div className="max-w-6xl px-5 mx-auto mt-32 text-center">
          <h2 className="text-4xl font-bold text-center">
