@@ -68,7 +68,7 @@ settoggle(!(toggle))
 
     <div className='md:hidden'>
 
-    <div id='menu' className={`absolute flex flex-col items-center self-end py-8 mt-10
+    <div id='menu' className={`fixed flex flex-col items-center self-end py-8 mt-10
     space-y-6 font-bold bg-white text-black sm-w-auto sm:self-center left-6 right-6 drop-shadow-md ${toggle ? ' ' : 'hidden'}`}>
 
     <a href="#">Pricing</a>
