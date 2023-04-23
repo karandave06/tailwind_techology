@@ -1,0 +1,10 @@
+
+@import '../../index.scss';
+.cta{
+    background-image: url('../../../public/bg-simplify-section-desktop.svg');
+    background-repeat: no-repeat;
+
+    @include m576{
+        background-image: url('../../../public/bg-simplify-section-mobile.svg');
+    }
+}

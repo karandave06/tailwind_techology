@@ -1,0 +1,35 @@
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+body{
+    background-image: url('../public/bg-tablet-pattern.svg');
+    background-repeat: no-repeat;
+    background-size: 800px;
+    background-position:90% -25%;
+
+   
+}
+
+@media screen and (max-width:576px){
+body{
+    background-position: 50px -50px;
+    background-size: 500px;
+}
+}
+
+@mixin tab{
+    @media screen and (max-width:768px){
+@content
+    }
+}
+
+
+
+@mixin m576{
+    @media screen and (max-width:576px){
+@content
+    }
+}

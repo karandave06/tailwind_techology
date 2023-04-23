@@ -1,0 +1,127 @@
+@import '../../index.scss';
+@font-face {
+  src: url("https://www.axis-praxis.org/fonts/webfonts/MetaVariableDemo-Set.woff2")
+    format("woff2");
+  font-family: "Meta";
+  font-style: normal;
+  font-weight: normal;
+}
+
+.logo {
+    margin-right: .8rem;
+  h1 {
+    font-size: 2.2rem;
+    font-weight: normal;
+    font-family: "Anton", sans-serif;
+  }
+}
+
+.main-container {
+  a{
+    position: relative;
+    z-index: 1;
+    padding: .5rem;
+
+    &:hover{
+        color:#f8f4ec;
+        transition: .2s ease;
+    }
+
+    &:after{
+        display: block;
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        right: 0;
+        margin: auto;
+        width: 100%;
+        height: 1px;
+        content: '.';
+        color: transparent;
+        background: #ef5535;
+        visibility: none;
+        opacity: 0;
+        z-index: -1;
+    }
+
+    &:hover:after{
+        opacity: 1;
+        visibility: visible;
+        height: 100%;
+    }
+   
+}
+}
+
+.button{
+        
+        
+        width: 6rem;
+        margin:1rem;
+        height: 2rem;
+        position: relative;
+    a{
+        font-size: 13px;
+        position: absolute;
+        top: 7px;
+        right: 15px;
+    
+        
+        
+        
+        
+    }
+
+   
+}
+
+#menut-btn{
+  cursor: pointer;
+  transition: all 0.25s;
+  position: relative;
+  height: 24px;
+  width: 24px;
+}
+
+.hamburger-top,
+.hamburger-middle,
+.hamburger-bottom{
+
+  position: absolute;
+  width: 24px;
+  top: 0;
+  left: 0;
+  height: 2px;
+  background: #000;
+  transform: rotate(0);
+  transition:all 0.5s;
+
+}
+
+.hamburger-middle{
+  transform: translateY(
+    7px
+  );
+}
+
+.hamburger-bottom{
+  transform: translateY(
+    14px
+  );
+}
+
+.open{
+  transform: rotate(90deg);
+  transform: translateY(0px);
+}
+
+.open .hamburger-top{
+  transform: rotate(45deg) translate(6px) translateY(6px);
+}
+.open .hamburger-middle{
+// display: none;
+left: -10000%;
+}
+.open .hamburger-bottom{
+  transform: rotate(-45deg) translate(-6px) translateY(6px);
+}
